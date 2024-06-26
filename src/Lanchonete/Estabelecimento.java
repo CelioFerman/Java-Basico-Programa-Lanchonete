@@ -15,23 +15,12 @@ public class Estabelecimento {
         cozinheiro.adicionarLancheNoBalcao();
 
         Atendente atendente = new Atendente();
-        atendente.pegarLancheCozinha();
         atendente.receberPagamento();
         atendente.servindoMesa();
-
-        //Ações que somente o seu pacote cozinha precisa conhecer
-        atendente.trocarGas();
 
         Cliente cliente = new Cliente();
         cliente.escolherLanche();
         cliente.fazerPedido();
         cliente.pagarConta();
-
-        //não deveria, mas o estabelecimento
-        //ainda não definiu normas de atendimento
-        cliente.pegarPedidoBalcao();
-
-        //esta ação é muito sigiloza, que tal ser privada?
-        cliente.consultarSaldoAplicativo();
     }
 }

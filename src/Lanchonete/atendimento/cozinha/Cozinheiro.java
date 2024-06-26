@@ -1,6 +1,5 @@
 package Lanchonete.atendimento.cozinha;
-
-import Lanchonete.atendimento.Atendente;
+import Lanchonete.atendimento.cozinha.Almoxarife;
 
 public class Cozinheiro {
     public void adicionarLancheNoBalcao() {
@@ -47,10 +46,6 @@ public class Cozinheiro {
 
     private void fritarIngredientesLanche() {
         System.out.println("Fritando a carne e o ovo para hamburguer");
-    }
-
-    public void pedirParaTrocarGas(Atendente meuAmigo) {
-        meuAmigo.trocarGas();
     }
 
     private void pedirParaTrocarGas(Almoxarife meuAmigo) {
